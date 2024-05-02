@@ -6,23 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="mq-estilo.css">
+    <!--Removendo o mq-estilo.css
+        <link rel="stylesheet" href="mq-estilo.css">
+    -->
     <link rel="shortcut icon" href="opsz24.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <title>MVC-Controle de Multa</title>
+    <title>Parte 01 - Controle Alfandega</title>
 </head>
 
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                <!-- Aqui vai ter uma imagem pelo CSS // 
-                Criar uma pagina com sistema ou controle de Multa//
-                Controle de Alfandega = BRASIL não é Estrangeiro// -->
+                <!-- Aqui vai ter uma imagem pelo CSS // Controle de Alfandega = BRASIL não é Estrangeiro// -->
             </div>
             <div id="formulario">
                 <h1>Parte 01 - Controle Alfandega</h1>
-                <p>Bem-vindo novamente, <p>Digite a Nacionalidade sua e veremos seu Visto de permanencia !.</p>
+                <p>Bem-vindo novamente,
+                <p>Digite a Nacionalidade sua e veremos seu Visto de permanencia !.</p>
                 <p>Nacionalidade:<input type="number" name="txtvel" id="txtvel"> <br>(Ex: US, UK, IT, KO)</p>
                 <P>Seu Nome:<br><input type="text" name="txtplac" id="txtplac"><br>(Nome e Sobrenome)</p>
                 </P>
@@ -30,14 +31,14 @@
                 <div id="resp"> </div>
 
                 <script>
+                    //precisa ser alterado os tipos de variaveis e nome dos objetos!
                     function calcular() {
                         var txtvel = window.document.querySelector('input#txtvel')
                         var vel = Number(txtvel.value)
                         var resp = window.document.querySelector('div#resp')
                         var placa = String(txtplac.value)
-                        var txtplac = window.document.querySelector('input#txtplac')    
-                         /*ESSAS LINHAS RECEBEM AS VARIAVEIS DE VELOCIDADE E 
-                        RETORNA A 'RESP' DO VALOR DE VELOCIDADE*/
+                        var txtplac = window.document.querySelector('input#txtplac')
+                        /*ESSAS LINHAS RECEBEM AS VARIAVEIS DE VELOCIDADE E RETORNA A 'RESP' DO VALOR DE VELOCIDADE*/
                         //resp.innerHTML = '<p>A velocidade do veiculo é de ' +vel+ ' Km/h</p>'
                         if (vel > 60) {
                             resp.innerHTML += `<p>Você foi multado por excesso de velocidade ${vel} Km/h, ${placa}</p>`
