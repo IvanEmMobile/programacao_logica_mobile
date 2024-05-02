@@ -1,0 +1,48 @@
+/*
+#593493 Roxo
+#833CA3 Violeta
+#FF7F00 Laranja
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    border-radius: 7px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 7px;
+    width: 500px;
+}
+
+header {
+    color: #fff;
+    background-color: #833CA3;
+    text-align: center;
+
+
+}
+
+section>div {
+    background-color: #FF7F00;
+    border-radius: 7px;
+    padding-left: 05px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+p{
+    padding-left: 05px;
+    text-align: justify;
+    font-size: 15px;
+    font-style: normal;
+}
+
+footer {
+    background-color: #593493;
+    color: #fff;
+    font-style: italic;
+    padding: 07px;
+
+    text-align: center;
+    width: 500px;
+}
