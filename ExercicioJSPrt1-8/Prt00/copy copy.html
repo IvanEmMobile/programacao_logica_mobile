@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banco da Proz Bank</title>
+</head>
+<body>
+  <h1>Banking Proz System</h1>
+    <p>Current Balance: <span id="balance">$0.00</span></p>
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="checkBalance()">Check Balance</button>
+  
+    <script>
+      var balance = 0;
+  
+      function deposit() {
+        var amount = prompt("Enter amount to deposit:");
+        balance += parseFloat(amount);
+        updateBalance();
+      }
+  
+      function withdraw() {
+        var amount = prompt("Enter amount to withdraw:");
+        balance -= parseFloat(amount);
+        updateBalance();
+      }
+  
+      function checkBalance() {
+        alert("Your current balance is: $" + balance.toFixed(2));
+      }
+  
+      function updateBalance() {
+        document.getElementById("balance").innerHTML = "$" + balance.toFixed(2);
+      }
+  
+      function processTransaction(type, amount) {
+        switch (type) {
+          case "deposit":
+            balance += amount;
+            break;
+          case "withdraw":
+            balance -= amount;
+            break;
+          default:
+            alert("Invalid transaction type");
+        }
+        updateBalance();
+      }
+    </script>
+  </body>
+  </html>
