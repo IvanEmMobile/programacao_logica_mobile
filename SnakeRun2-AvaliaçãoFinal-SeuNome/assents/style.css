@@ -1,29 +1,45 @@
 @charset "UTF-08";
 
-body,main {
+/* 
+cores {
+    roxo -- #593493;
+    violeta -- #844CA3;
+    laranja -- #FF7F00;
+    tomDeBranco -- #f5efea;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+body,
+main {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: rgba(255, 115, 0, 0.829);
+    background-color: #ff8000dd;
     display: flex;
     flex-direction: column;
     min-width: 100vh;
     align-items: center;
     justify-content: center;
-    /*;
-   ;
-    */
 
 }
 
 h1 {
-    font-size: 2em;
-    color: beige;
+    font-size: 1.9em;
+    color: #f5efea;
 
 }
 
 canvas {
-    border: 5px solid rgb(247, 245, 245);
     background-color: black;
     align-items: center;
+    border: 5px solid rgb(247, 245, 245);
 }
 
 .score {
@@ -31,7 +47,7 @@ canvas {
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
-    color: beige;
+    color: #f5efea;
 
 }
 
@@ -47,20 +63,23 @@ canvas {
     display: none;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .game-over {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3rem;
+    color: #f5efea;
 }
 
-.final-score{
+.final-score {
     font-size: 1.5rem;
     font-weight: 500;
+    color: #f5efea;
 }
 
-.btn-play{
+.btn-play {
     border: none;
     border-radius: 100px;
     padding: 10px 15px 10px 12px;
@@ -74,10 +93,6 @@ canvas {
     gap: 5px;
     cursor: pointer;
 }
-
-
-
-
 
 /*
 *
