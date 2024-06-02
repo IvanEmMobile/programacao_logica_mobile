@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1- 10</title>
+</head>
+
+<body>
+    <!--bloco pronto!-->
+
+    Primeira nota: <input id="nota1" type="number"> <br />
+    Segunda nota: <input id="nota2" type="number"> <br />
+    <button onclick="media()">Calcular Média</button>
+    <script type="text/javascript">
+        function media() {
+            var nota1 = parseFloat(document.getElementById("nota1").value);
+            var nota2 = parseFloat(document.getElementById("nota2").value);
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 7 && media <= 10) {
+                if (media == 10) {
+                    alert("Aprovado com Distinção!");
+                } else {
+                    alert("Aprovado! Média: " + media);
+                }
+            } else if (media >= 5 && media < 7) {
+                alert("Aluno em Recuperação! Média: " + media);
+            } else {
+                alert("Reprovado! Média: " + media);
+            }
+        }
+    </script>
+
+
+    <!--bloco pronto!-->
+</body>
+
+</html>

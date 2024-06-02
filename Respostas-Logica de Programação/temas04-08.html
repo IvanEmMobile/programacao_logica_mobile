@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 2- 10</title>
+</head>
+
+<body>
+  <!--bloco pronto!-->
+
+
+  <h1>Resultados da Competição de Futsal</h1>
+  <button onclick="calcularPontos()">Calcular Pontos</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcularPontos() {
+      let totalPontos = 0;
+
+      for (let i = 1; i <= 6; i++) {
+        let resultado = prompt(`Informe o resultado da partida ${i} (3 para vitória, 1 para derrota):`).toLowerCase();
+
+        if (resultado === '3') {
+          totalPontos += 3;
+        } else if (resultado === '1') {
+          totalPontos += 1;
+        } else {
+          alert("Entrada inválida! Por favor, insira '3' para vitória ou '1' para derrota.");
+          i--; // Repetir a iteração para entrada inválida
+        }
+      }
+
+      document.getElementById("resultado").innerText = `Total de pontos: ${totalPontos}`;
+    }
+  </script>
+
+  <!--bloco pronto!-->
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 2- 10</title>
+</head>
+
+<body>
+  <!--bloco pronto!-->
+
+
+  <h1>Maior e Menor Número</h1>
+  <button onclick="encontrarMaiorEMenor()">Inserir Números</button>
+  <p id="resultado"></p>
+
+  <script>
+    function encontrarMaiorEMenor() {
+      // Lê três números inteiros do usuário
+      let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+      let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+      let num3 = parseInt(prompt("Digite o terceiro número inteiro:"));
+
+      // Verifica se os números são válidos
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+        alert("Por favor, insira apenas números inteiros.");
+        return;
+      }
+
+      // Encontra o maior e o menor número
+      let maior = Math.max(num1, num2, num3);
+      let menor = Math.min(num1, num2, num3);
+
+      // Exibe o resultado
+      document.getElementById("resultado").innerText = `Maior número: ${maior}\nMenor número: ${menor}`;
+    }
+  </script>
+
+  <!--
+    <h1>Maior e Menor Número</h1>
+  <button onclick="encontrarMaiorEMenor()">Inserir Números</button>
+  <p id="resultado"></p>
+
+  <script>
+      function encontrarMaiorEMenor() {
+          // Lê três números inteiros do usuário
+          let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+          let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+          let num3 = parseInt(prompt("Digite o terceiro número inteiro:"));
+
+          // Verifica se os números são válidos
+          if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+              alert("Por favor, insira apenas números inteiros.");
+              return;
+          }
+
+          // Encontra o maior e o menor número
+          let maior = Math.max(num1, num2, num3);
+          let menor = Math.min(num1, num2, num3);
+
+          // Exibe o resultado
+          document.getElementById("resultado").innerText = `Maior número: ${maior}\nMenor número: ${menor}`;
+      }
+  </script>
+-->
+
+
+  <!--bloco pronto!-->
+</body>
+
+</html>

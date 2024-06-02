@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 2- 10</title>
+</head>
+
+<body>
+    <!--bloco pronto!-->
+
+        Número: <input id="numero" type="number"> <br />
+        <button onclick="parImpar()">Verificar</button>
+        <script type="text/javascript">
+          function parImpar(){
+            var numero = parseInt(document.getElementById("numero").value);
+            
+            if(numero % 2 == 0){
+              alert("O número " + numero + " é par!");
+            } else {
+              alert("O número " + numero + " é ímpar!");
+            }
+          }
+        </script>
+   
+        
+    <!--bloco pronto!-->
+</body>
+
+</html>

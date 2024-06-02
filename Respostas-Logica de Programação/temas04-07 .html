@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 2- 10</title>
+</head>
+
+<body>
+  <!--bloco pronto!-->
+
+  <h1>Verificador de Saldo</h1>
+  <p>Digite o valor do seu saldo disponível:</p>
+  <input id="saldo" type="number"> <br />
+  <p>Digite o valor do produto que você deseja comprar:</p>
+  <input id="produto" type="number"> <br />
+  <button onclick="verificarSaldo()">Verificar Saldo</button>
+  <script type="text/javascript">
+    function verificarSaldo(){
+      var saldo = parseFloat(document.getElementById("saldo").value);
+      var produto = parseFloat(document.getElementById("produto").value);
+      
+      if(saldo >= produto){
+        alert("Você pode comprar o produto!");
+      } else {
+        alert("Saldo insuficiente. Você precisa de R$ " + (produto - saldo).toFixed(2) + " mais.");
+      }
+    }
+  </script>
+
+  <!--bloco pronto!-->
+</body>
+
+</html>
