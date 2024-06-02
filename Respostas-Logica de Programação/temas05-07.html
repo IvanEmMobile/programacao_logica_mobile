@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5 - 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!--bloco pronto!-->
+    <div class="container">
+        <h1>Contagem Regressiva</h1>
+        <div id="contador"></div>
+    </div>
+
+    <script>
+        // Seleciona o elemento onde a contagem regressiva será exibida
+        const contadorDiv = document.getElementById('contador');
+
+        // Loop para realizar a contagem regressiva de 10 a 0
+        for (let i = 10; i >= 0; i--) {
+            // Adiciona o número atual à div de contagem regressiva
+            contadorDiv.innerHTML += i + '<br>';
+        }
+    </script>
+
+    <!--bloco pronto!-->
+</body>
+
+</html>
