@@ -12,7 +12,7 @@
 
 body {
     background-color: #1111;
-    background-image: url(/assents/bgnetflix.png);
+    background-image: url(assents/bgnetflix.png);
     position: relative;
     background-size: cover;
     /**/
@@ -41,7 +41,7 @@ body {
 }
 
 .banner {
-    background-image: url(/assents/bannerZootopia2.png);
+    background-image: url(assents/bannerZootopia2.png);
     background-size: cover;
     background-position: center center;
     color: #fff;
