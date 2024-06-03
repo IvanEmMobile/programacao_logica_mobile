@@ -41,12 +41,13 @@ body {
 }
 
 .banner {
-    background-image: url(assents/bannerZootopia2.png);
+    background-image: url(./bannerZootopia2.png);
     background-size: cover;
     background-position: center center;
     color: #fff;
     object-fit: contain;
     height: 448px;
+    /*Trocar para 470px para manter indentação e responsividade*/
 }
 
 .banner__contents {
